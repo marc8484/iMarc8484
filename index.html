@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marc Laflamme | iMarc8484</title>
-    <meta http-equiv="refresh" content="0; url=https://marclaflamme.com" />
+    <style>
+        :root {
+            --primary: #38bdf8;
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f1f5f9;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; }
+        
+        .profile-container { text-align: center; max-width: 400px; width: 100%; }
+        
+        /* Using your hosted image from your media-storage repo! */
+        .profile-pic { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--primary); margin-bottom: 20px; object-fit: cover; }
+        
+        h1 { font-size: 1.8rem; margin: 10px 0; }
+        p { opacity: 0.8; margin-bottom: 30px; line-height: 1.5; }
+        
+        .links { display: flex; flex-direction: column; gap: 15px; }
+        .link-card { background: var(--card); border: 1px solid #334155; padding: 15px; border-radius: 12px; text-decoration: none; color: var(--text); font-weight: 600; transition: all 0.2s ease; display: flex; align-items: center; justify-content: center; }
+        .link-card:hover { transform: scale(1.03); border-color: var(--primary); background: #2d3e50; }
+        
+        .footer-logos { margin-top: 40px; display: flex; gap: 20px; opacity: 0.6; }
+        .footer-logos img { height: 30px; }
+    </style>
 </head>
 <body>
-    <p>Redirecting to my main site...</p>
+
+    <div class="profile-container">
+        <img src="https://marc8484.github.io/media-storage/images/marc8484_gamer2025.jpg" class="profile-pic" alt="Marc Laflamme">
+        
+        <h1>Marc Laflamme</h1>
+        <p>Payroll & HRIS Implementation Specialist | Content Creator | Aquarium Enthusiast</p>
+
+        <div class="links">
+            <a href="https://marclaflamme.com" class="link-card">🌐 Visit My Professional Blog</a>
+            <a href="https://github.com/marc8484/media-storage" class="link-card">📂 Public Asset Library</a>
+            <a href="https://twitch.tv/marc8484" class="link-card">🎮 Watch on Twitch</a>
+            <a href="https://www.linkedin.com/in/marc-laflamme-pcp/" class="link-card">💼 Connect on LinkedIn</a>
+        </div>
+
+        <div class="footer-logos">
+            <img src="https://marc8484.github.io/media-storage/images/Laflamme,%20Marc_pcp%20logo.jpeg" alt="PCP Logo">
+        </div>
+    </div>
+
 </body>
 </html>
